@@ -30,17 +30,17 @@ document.getElementById('add-money')
 
 //---------------------------------
 const historyitem = document.createElement("div")
-historyitem.className = "bg-white p-3 border "
+historyitem.className = "bg-white px-8 py-4 mt-8 space-y-4 border border-black rounded-md "
 
 historyitem.innerHTML = `
   <p>${new Date().toLocaleDateString('en-US', {
-    timeZone: 'Asia/Dhaka', timeStyle: 'medium', dateStyle: 'full'
+    timeZone: 'Asia/Dhaka'
   })}</p>
 
 <p>${addMoneynumber.toFixed(2)} Taka is Donated for famine-2024 at Feni, Bangladesh</p>`
 const historyContainer = document.getElementById('history-list');
 
-historyContainer.insertBefore(historyitem, historyContainer.firstChild)
+historyContainer.appendChild(historyitem, historyContainer.firstChild)
    
 
 })
@@ -71,6 +71,20 @@ historyContainer.insertBefore(historyitem, historyContainer.firstChild)
 
     document.getElementById('my_modal_1').showModal()
 
+    //---------------------------
+    const historyitem = document.createElement("div")
+historyitem.className = "bg-white px-8 py-4 mt-8 space-y-4 border border-black rounded-md "
+
+historyitem.innerHTML = `
+  <p>${new Date().toLocaleDateString('en-US', {
+    timeZone: 'Asia/Dhaka'
+  })}</p>
+
+<p>${addMoneynumber.toFixed(2)} Taka is Donated for Flood Relief in Feni,Bangladesh</p>`
+const historyContainer = document.getElementById('history-list');
+
+historyContainer.appendChild(historyitem, historyContainer.firstChild)
+
 })
 
 
@@ -100,6 +114,23 @@ document.getElementById('add-money-3')
 
 
   document.getElementById('my_modal_1').showModal()
+
+  //-------------------
+
+  const historyitem = document.createElement("div")
+historyitem.className = "bg-white px-8 py-4 mt-8 space-y-4 border border-black rounded-md "
+
+historyitem.innerHTML = `
+  <p>${new Date().toLocaleDateString('en-US', {
+    timeZone: 'Asia/Dhaka'
+  })}</p>
+
+<p>${addMoneynumber.toFixed(2)} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>`
+const historyContainer = document.getElementById('history-list');
+
+historyContainer.appendChild(historyitem, historyContainer.firstChild)
+   
+  
 })
     
 
@@ -116,7 +147,11 @@ historytab.addEventListener('click', function(){
      DonationTab.classList.remove('btn', 'btn-info', 'text-white')
 
      document.getElementById('expensive-form').classList.add('hidden')
+     document.getElementById('history-list').classList.remove('hidden')
+     document.getElementById('donation-tab').classList.add('hidden')
 
+
+     
      
 })
 
