@@ -23,7 +23,7 @@
                 </div>
               
                     <div class="flex">
-                        <p class="flex h-6"> <img src="assets/coin.png" alt="">15550</p>
+                        <p id="Account-balance"  class="flex h-6">15550 <img src="assets/coin.png" alt=""</p>
                     </div>
                 
             </div>
@@ -34,13 +34,16 @@
     <section class=" py-8">
         <div class="flex justify-center gap-4">
             <button class="btn btn-info text-white">Donation</button>
-            <button class="btn">History</button>
+           <div> <button id="Transaction-container" class="btn">History</button>
+            <div id="Transaction-section" class="">
+                <div id="" class="space-y-4">
+        </div>
         </div>
     </section>
 
 
 
-    <main class="md:container md:mx-auto ">
+    <main id="add-money-form" class="md:container md:mx-auto  ">
         <div class=" min-h-screen">
             <div class="hero-content flex-col lg:flex-row gap-14 border rounded-2xl">
               
@@ -48,15 +51,15 @@
                 src="assets/noakhali.png"
                 class="max-w-sm rounded-lg shadow-2xl" />
               <div>
-                <button class="btn"> <img src="assets/coin.png" alt="">1000 BDT</button>
+                <button id="balance-1" class="btn"> <img src="assets/coin.png" alt="">1000 BDT</button>
                 <p class="font-semibold ">Donate for Flood at Noakhali, Bangladesh</p>
                 <p class="py-6 w-96 text-gray-500">
                     The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                 </p>
                 <div class="">
-                    <input class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
+                    <input id="add-input-money" class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
                 <div>
-                    <button class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
+                    <button id="add-money" class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
                 </div>
                 </div>
             
@@ -68,7 +71,7 @@
     </main>
     <!--Main Section-2-->
 
-    <main class="md:container md:mx-auto">
+    <main id="add-money-form-2" class="md:container md:mx-auto">
         <div class="-mt-32">
             <div class="hero-content flex-col lg:flex-row gap-14 border rounded-2xl">
               
@@ -76,15 +79,15 @@
                 src="assets/feni.png"
                 class="max-w-sm rounded-lg shadow-2xl" />
               <div>
-                <button class="btn"> <img src="assets/coin.png" alt="">2000 BDT</button>
+                <button id="balance-2" class="btn"> <img src="assets/coin.png" alt="">2000 BDT</button>
                 <p class="font-semibold ">Donate for Flood Relief in Feni,Bangladesh</p>
                 <p class="py-6 w-96 text-gray-500">
                     The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                 </p>
                 <div class="">
-                    <input class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
+                    <input id="add-input-money-2" class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
                 <div>
-                    <button class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
+                    <button id="add-money-2" class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
                 </div>
                 </div>
             
@@ -94,7 +97,7 @@
     </main>
 
     <!--Main Section-3-->
-    <main class="md:container md:mx-auto">
+    <main id="add-input-money-3" class="md:container md:mx-auto">
         <div class="mt-10">
             <div class="hero-content flex-col lg:flex-row gap-14 border rounded-2xl">
               
@@ -102,15 +105,15 @@
                 src="assets/quota-protest.png"
                 class="max-w-sm rounded-lg shadow-2xl" />
               <div>
-                <button class="btn"> <img src="assets/coin.png" alt="">2400 BDT</button>
+                <button id="balance-3" class="btn"> <img src="assets/coin.png" alt="">2400 BDT</button>
                 <p class="font-semibold ">Aid for Injured in the Quota Movement</p>
                 <p class="py-6 w-96 text-gray-500">
                     The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                 </p>
                 <div class="">
-                    <input class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
+                    <input id="add-input-money-3" class="border rounded-md px-6 w-80 h-8" placeholder="Write Donation Amount" type="text">
                 <div>
-                    <button class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
+                    <button id="add-money-3" class=" my-4 w-80 rounded-xl btn btn-info text-white">Donate Now</button>
                 </div>
                 </div>
             
@@ -119,5 +122,6 @@
           </div>
     </main>
      <script src="blog.js"></script>
+     <script src="utilities.js"></script>
 </body>
 </html>
