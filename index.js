@@ -26,8 +26,7 @@ document.getElementById('add-money')
     document.getElementById('Account-balance').innerText = newbalance;
 
 
-    
-    
+   
 
 })
 
