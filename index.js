@@ -26,6 +26,21 @@ document.getElementById('add-money')
     document.getElementById('Account-balance').innerText = newbalance;
 
 
+    document.getElementById('my_modal_1').showModal()
+
+//---------------------------------
+const historyitem = document.createElement("div")
+historyitem.className = "bg-white p-3 border "
+
+historyitem.innerHTML = `
+  <p>${new Date().toLocaleDateString('en-US', {
+    timeZone: 'Asia/Dhaka', timeStyle: 'medium', dateStyle: 'full'
+  })}</p>
+
+<p>${addMoneynumber.toFixed(2)} Taka is Donated for famine-2024 at Feni, Bangladesh</p>`
+const historyContainer = document.getElementById('history-list');
+
+historyContainer.insertBefore(historyitem, historyContainer.firstChild)
    
 
 })
@@ -35,7 +50,7 @@ document.getElementById('add-money')
   .addEventListener('click', function(){
     const addMoney2 = document.getElementById('add-input-money-2').value;
 
-    const Balance2= document.getElementById('balance-2').innerHTML;
+    const Balance2= document.getElementById('balance-2').innerText;
     console.log(addMoney2, Balance2)
 
     if(isNaN(addMoney2)){
@@ -54,6 +69,8 @@ document.getElementById('add-money')
     
     document.getElementById('Account-balance').innerText = newbalance;
 
+    document.getElementById('my_modal_1').showModal()
+
 })
 
 
@@ -62,13 +79,13 @@ document.getElementById('add-money-3')
 .addEventListener('click', function(){
   const addMoney3 = document.getElementById('add-input-money-3').value;
 
-  const Balance3= document.getElementById('balance-3').innerHTML;
+  const Balance3= document.getElementById('balance-3').innerText;
   console.log(addMoney3, Balance3)
 
-  if(isNaN(addMoney3)){
-      alert('Wrong Amount! Pleace try again')
-      return;
-  }
+   if(isNaN(addMoney3)){
+       alert('Wrong Amount! Pleace try again')
+       return;
+   }
   const balance3= document.getElementById('Account-balance').innerText;
   console.log(balance3)
 
@@ -80,8 +97,29 @@ document.getElementById('add-money-3')
 
   
   document.getElementById('Account-balance').innerText = newbalance;
+
+
+  document.getElementById('my_modal_1').showModal()
 })
     
+
+
+// History Button 
+
+const historytab = document.getElementById('history-tab')
+const DonationTab= document.getElementById('donation-tab')
+historytab.addEventListener('click', function(){
+
+
+     historytab.classList.add('btn', 'btn-info', 'text-white')
+
+     DonationTab.classList.remove('btn', 'btn-info', 'text-white')
+
+     document.getElementById('expensive-form').classList.add('hidden')
+
+     
+})
+
 
 
 
